@@ -12,12 +12,14 @@ def parse():
 
 
 def fto_load(the_path):
+    """Retrieves data from the storage (takes one arg for path to storage)"""
     with open(the_path, 'r') as f:
         data = json.load(f)
     return data
 
 
 def fto_dump(data, the_path):
+    """Dump data to storage"""
     with open(the_path, 'w') as f:
         json.dump(data, f)
 
