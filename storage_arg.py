@@ -35,7 +35,7 @@ def main_p(key, value, the_path):
                 data[key] = [value]
                 fto_dump(data, the_path)
         else:
-            D = dict()  # use for store key-value => dump into temp storage.date
+            D = dict()  # For store key-value => dump into temp storage.date.
             D[key] = [value]
             fto_dump(D, the_path)
     elif key:
